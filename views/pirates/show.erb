@@ -4,7 +4,7 @@
 
 
 <h2>Display your first ship here</h2>
-<% first_ship = @ships[0] %>
+<% @ships.each do |ship| %>
 <%binding.pry%>
 <%= ship.name %>
 <%= ship.type %>
