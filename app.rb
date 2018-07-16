@@ -14,6 +14,10 @@ get '/new' do
   erb :'pirates/new'
 end
 
+get '/pirates' do
+  erb :'pirates/show'
+end
+
 post '/pirates' do
   erb :'pirates/show'
 end
