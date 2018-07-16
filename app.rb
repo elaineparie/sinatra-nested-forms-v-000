@@ -1,6 +1,6 @@
 require './environment'
-require_relative models/pirate.rb
-require_relative models/ship.rb
+require_relative 'models/pirate.rb'
+require_relative 'models/ship.rb'
 
 module FormsLab
   class App < Sinatra::Base
@@ -15,8 +15,6 @@ end
 @ships = Ship.all
 
 erb :new
-end
-
-
+    end
   end
 end
