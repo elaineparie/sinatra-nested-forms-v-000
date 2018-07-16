@@ -5,13 +5,18 @@ require_relative models/ship.rb
 module FormsLab
   class App < Sinatra::Base
 
-    get '/new' do
-      erb :new
-    end 
+    post '/new' do
+@pirate = Pirate.new(params[:pirate])
 
-    post '/new' do 
-      erb :show
-    end
+params[:pirate][:ships].each do |details|
+  Shipd.new(details)
+end
+
+@courses = Course.all
+
+erb :student
+end
+
 
   end
 end
