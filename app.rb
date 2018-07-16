@@ -5,8 +5,8 @@ require_relative 'app/models/ship'
 module FormsLab
   class App < Sinatra::Base
 
-    get '/new' do
-      erb :new
+    get '/' do
+      erb :index
     end
 
     post '/new' do
