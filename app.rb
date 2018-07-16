@@ -5,6 +5,10 @@ require_relative 'app/models/ship'
 module FormsLab
   class App < Sinatra::Base
 
+    get '/' do 
+      erb :index
+    end 
+
     post '/new' do
 @pirate = Pirate.new(params[:pirate])
 
