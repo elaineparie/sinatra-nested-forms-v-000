@@ -14,4 +14,8 @@ def self.all
   SHIPS
 end
 
+def self.clear
+  SHIPS.destroy
+end
+
 end
