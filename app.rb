@@ -22,7 +22,7 @@ end
 
 @ships = Ship.all
 
-erb :new
+erb :show
     end
   end
 end
