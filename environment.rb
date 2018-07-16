@@ -8,5 +8,3 @@ require 'sinatra/reloader'
 
 require_all './app'
 
-require_relative 'models/pirate'
-require_relative 'models/ship'
